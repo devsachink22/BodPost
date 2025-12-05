@@ -10,12 +10,16 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 
-# -------------------------------------------------------
 # Paths (adjust if your folder structure is different)
-# -------------------------------------------------------
-BASE_DIR = "E:/MSCS/1st Semester/Intro to AI (52560)/Project Work"
-DATA_CSV = os.path.join(BASE_DIR, "data", "posture_dataset_mediapipe.csv")
-MODELS_DIR = os.path.join(BASE_DIR, "models")
+if "CODESPACE_NAME" in os.environ:
+    # GitHub Codespaces Unix-style paths
+    PROJECT_ROOT = "/workspaces/BodPost"
+else:
+    # Local Windows machine
+    PROJECT_ROOT = "E:/MSCS/1st Semester/Intro to AI (52560)/Project Work"
+
+DATA_CSV = os.path.join(PROJECT_ROOT, "data", "posture_dataset_mediapipe.csv")
+MODELS_DIR = os.path.join(PROJECT_ROOT, "models")
 os.makedirs(MODELS_DIR, exist_ok=True)
 
 MODEL_PATH = os.path.join(MODELS_DIR, "posture_model.pkl")
