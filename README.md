@@ -58,7 +58,7 @@ To automatically classify correct vs incorrect posture by extracting 33 MediaPip
 
 • OpenCV 4.12.0.88
 
-• Mediapipe 0.10.21
+• MediaPipe 0.10.21
 
 • Pandas 2.3.3
 
