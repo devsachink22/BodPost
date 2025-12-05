@@ -17,4 +17,3 @@ BodPost/
 │──   └── utils.py
 │── documents/                # Proposal, notes, ppts, other docs
 │── README.md                 # Project documentation
- 
