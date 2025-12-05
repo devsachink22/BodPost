@@ -1,4 +1,17 @@
 # BodPost: Real-Time Body Posture Detection System
+BodPost is a machine-learning–powered system that detects correct vs incorrect human posture using MediaPipe keypoints and an optimized ML classifier. It supports:
+
+• Dataset generation from images
+
+• MediaPipe feature extraction
+
+• Model training & evaluation
+
+• Real-time webcam posture detection
+
+• Modular, extensible project architecture
+
+# BodPost: Project Structure
 BodPost/
 
 │── data/                     # Raw posture images grouped in class folders
@@ -36,3 +49,39 @@ BodPost/
 │── documents/                # Proposal, notes, ppts, other docs
 
 │── README.md                 # Project documentation
+
+# Project Objective
+To automatically classify correct vs incorrect posture by extracting 33 MediaPipe pose keypoints, computing engineered features, and training a machine-learning classifier optimized for accuracy and real-time performance.
+
+# Technology Used
+• Python 3.12.1
+
+• OpenCV 4.12.0.88
+
+• Mediapipe 0.10.21
+
+• Pandas 2.3.3
+
+• NumPy 1.26.4
+
+• Scikit-Learn 1.7.2
+
+# Future Enhancements
+• Convert this binary classificcation model into multi classification model
+
+• Add ergonomic risk scoring system
+
+• Add cloud dashboard for posture logging
+
+• Deploy model as a web app (Flask/FastAPI)
+
+• Add pose-correction suggestions using vector geometry
+
+• Integrate with wearable devices
+
+# Author
+Sachin Kumar
+
+Machine Learning & Computer Vision Developer
+
+GitHub: https://github.com/devsachink22
