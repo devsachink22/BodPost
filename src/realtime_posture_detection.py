@@ -5,9 +5,15 @@ import joblib
 import numpy as np
 import mediapipe as mp
 
-# Paths (adjust BASE_DIR if your folder structure is different)
-BASE_DIR = r"E:/MSCS/1st Semester/Intro to AI (52560)/Project Work"
-MODELS_DIR = os.path.join(BASE_DIR, "models")
+# Detect whether running inside GitHub Codespaces
+if "CODESPACE_NAME" in os.environ:
+    # GitHub Codespaces Unix-style paths
+    PROJECT_ROOT = "/workspaces/BodPost"
+else:
+    # Local Windows machine
+    PROJECT_ROOT = "E:/MSCS/1st Semester/Intro to AI (52560)/Project Work"
+
+MODELS_DIR = os.path.join(PROJECT_ROOT, "models")
 
 MODEL_PATH = os.path.join(MODELS_DIR, "posture_model.pkl")
 FEATURE_COLS_PATH = os.path.join(MODELS_DIR, "posture_feature_columns.json")
