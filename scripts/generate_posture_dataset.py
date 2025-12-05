@@ -86,7 +86,13 @@ def process_images(INPUT_FOLDER, OUTPUT_CSV):
     print("Dataset generated successfully:", OUTPUT_CSV)
 
 if __name__ == "__main__":
-    PROJECT_ROOT = "E:/MSCS/1st Semester/Intro to AI (52560)/Project Work"
+    # Detect whether running inside GitHub Codespaces
+    if "CODESPACE_NAME" in os.environ:
+        # GitHub Codespaces Unix-style paths
+        PROJECT_ROOT = "/workspaces/BodPost"
+    else:
+        # Local Windows machine
+        PROJECT_ROOT = "E:/MSCS/1st Semester/Intro to AI (52560)/Project Work"
     INPUT_FOLDER = os.path.join(PROJECT_ROOT, "data")
     OUTPUT_CSV = os.path.join(PROJECT_ROOT, "data/posture_dataset_mediapipe.csv")
 
