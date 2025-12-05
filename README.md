@@ -54,7 +54,7 @@ BodPost/
 To automatically classify correct vs incorrect posture by extracting 33 MediaPipe pose keypoints, computing engineered features, and training a machine-learning classifier optimized for accuracy and real-time performance.
 
 # Technology Used
-• Python 3.12.1
+• Python 3.12.0
 
 • OpenCV 4.12.0.88
 
@@ -62,7 +62,7 @@ To automatically classify correct vs incorrect posture by extracting 33 MediaPip
 
 • Pandas 2.3.3
 
-• NumPy 1.26.4
+• NumPy 2.2.6
 
 • Scikit-Learn 1.7.2
 
