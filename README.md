@@ -67,7 +67,7 @@ To automatically classify correct vs incorrect posture by extracting 33 MediaPip
 • Scikit-Learn 1.7.2
 
 # Future Enhancements
-• Convert this binary classificcation model into multi classification model
+• Convert this binary classification model into multi classification model
 
 • Add ergonomic risk scoring system
 
